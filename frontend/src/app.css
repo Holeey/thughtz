@@ -1,0 +1,308 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 25px;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+.btn_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  cursor: pointer;
+  border: 1px;
+  margin: 3px 0;
+  padding: 5px;
+  width: 100px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+  background-color: rgb(97, 97, 188);
+}
+
+input {
+  margin: 10px 0px;
+  padding: 10px;
+  border: none;
+  font-size: 15px;
+  color: navy;
+}
+input:focus {
+  outline: none;
+  border: none;
+}
+.loading {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  color: rgb(69, 69, 138);
+}
+.menu_open-btn,
+.mobile_menu {
+  display: none;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 25px;
+  padding: 20px 0;
+  z-index: 2;
+  box-shadow: 0px 1px 0px 0px rgb(0, 0, 0);
+  color: #fff;
+  background-color: rgb(28, 28, 57);
+}
+.signIn_register {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+/* Register Page */
+.form_section {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  max-width: 100%;
+}
+.registerBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 7rem;
+}
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgb(192, 189, 184);
+  width: 50%;
+}
+
+/*Login Page */
+.loginBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 7rem;
+}
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  border: soft;
+  border-radius: 10px;
+  padding: 20px;
+  width: 40%;
+  background-color: rgb(192, 189, 184);
+}
+
+/* Dashboard Page */
+.dashboard_section {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 0 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  align-items: center;
+  max-width: 100%;
+}
+.dashboard_banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 6rem;
+}
+.dashboard_banner p {
+  margin-top: 0;
+}
+.dashboard_banner span {
+  color: rgb(28, 78, 132);
+  font-weight: 700;
+}
+.No-post_text {
+  color: navy;
+  font-size: 20px;
+  font-weight: bold;
+}
+.dashboard_post-section {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 20px;
+  border-radius: 4px;
+}
+/* Post  */
+.post_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: soft;
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+}
+.editing {
+  flex-direction: column;
+}
+.post_input {
+  width: 500px;
+  padding: 20px;
+  border: solid 1px;
+}
+.post_input:focus {
+  border: solid 1px;
+}
+.post_input::placeholder {
+  font-size: 20px;
+}
+.post_section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  border-radius: 4px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 1px 1px 1px 1px rgb(29, 29, 78);
+}
+.post_text {
+  font-size: 18px;
+  font-weight: 300;
+}
+.post_date {
+  font-size: 14px;
+  font-style: italic;
+}
+.post_btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 2rem;
+}
+.post_share-btn {
+  padding: 20px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.post_update-btns {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.post_edit-btn {
+  background-color: transparent;
+  color: navy;
+  width: 100px;
+  padding: 0;
+  font-size: 15px;
+}
+.post_delete-btn {
+  background-color: transparent;
+  color: #e51313;
+  width: 100px;
+  padding: 0;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 750px) {
+  h1 {
+    font-size: 20px;
+  }
+  input {
+    font-size: 14px;
+  }
+  button {
+    width: 100px;
+    padding: 2px;
+  }
+  .registerForm {
+    width: 80%;
+  }
+  .loginForm {
+    width: 80%;
+  }
+  .dashboard_post-section {
+    width: 80%;
+  }
+  .dashboard_section {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu_open-btn {
+    display: flex;
+    color: #fff;
+    cursor: pointer;
+    transition: ease-out 2s;
+  }
+  .mobile_menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 110%;
+    width: 60%;
+    height: 100vh;
+    align-items: flex-start;
+    border: soft;
+    border-radius: 5px;
+    background: rgb(43, 43, 76);
+  }
+  .mobile_menu.active {
+    right: 0.5rem;
+  }
+  .menu_close-btn {
+    position: absolute;
+    right: 0;
+    color: rgb(192, 189, 184);
+    cursor: pointer;
+  }
+  ul {
+    padding: 30px 15px;
+  }
+  li {
+    list-style: none;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #fff;
+  }
+  .header {
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .signIn_register {
+    display: none;
+  }
+  .post_input {
+    width: 100%;
+  }
+  .editing {
+    flex-direction: unset;
+    flex-wrap: wrap;
+  }
+}
